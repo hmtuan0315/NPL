@@ -1,0 +1,45 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - xin chào
+    - chào bạn
+    - mình có chuyện muốn hỏi
+    - bạn ơi
+    - cho tôi hỏi
+
+- intent: question_is_bot
+  examples: |
+    - bạn có phải là robot không?
+    - are you a robot?
+    - bạn có phải là người máy không?
+    - bạn là người hay là robot?
+    - bạn là ai?
+    - who are you?
+    - ai đấy?
+
+- intent: say_yes
+  examples: |
+    - tất nhiên rồi
+    - có
+    - ok
+    - oke
+    - tôi thích nói chuyện với bạn hơn
+    - đúng vậy
+    - ừm
+    - ừ
+
+- intent: thank
+  examples: |
+    - cảm ơn
+    - oke
+    - cảm ơn bạn nhé
+
+
+
+
+

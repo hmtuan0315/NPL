@@ -1,0 +1,99 @@
+version: "2.0"
+
+intents:
+  - greet
+  - question_is_bot
+  - say_yes
+  - thank
+  - what_is_corona
+  - why_call_corona
+  - how_covid_spread
+  - can_muoi_have_covid
+  - protect_from_covid
+  - should_wear_mask
+  - what_mask_to_choose
+  - what_mask_not_choose
+  - how_wear_mask
+  - how_preserve_mask
+  - type_of_mask
+  - get_covid_from_product
+  - ques_overall_covid_country
+  - get_country
+
+entities:
+  - disease
+actions:
+  - overall_covid_country
+responses:
+  utter_please_rephrase:
+    - text: "Xin lỗi, tôi hiện giờ không hiểu được câu hỏi của bạn hoặc chưa được học về nó. Tôi mới chỉ được chủ nhân dạy về giao tiếp cơ bản và kiến thức covid. Liệu bạn có thể nhắc lại câu hỏi không?"
+
+  utter_greet:
+    - text: "Xin chào bạn"
+
+  utter_help:
+    - text: "Tôi có thể giúp gì cho bạn?"
+
+  utter_response_is_bot:
+    - text: "Đúng vậy, tôi là robot được phát triển bởi Tuấn."
+
+  utter_what_is_corona:
+    - text: "COVID-19 là bệnh do vi-rút có tên là SARS-CoV-2 gây ra. Hầu hết mọi người mắc bệnh COVID-19 đều có các triệu chứng nhẹ, nhưng một số người có thể bị bệnh nặng.
+          Mặc dù hầu hết những người mắc COVID-19 trở nên khỏe hơn chỉ trong vòng vài tuần kể từ khi nhiễm bệnh, một vài người lại gặp phải các tình trạng hậu COVID. Các tình trạng
+          sau khi mắc COVID bao gồm rất nhiều vấn đề sức khỏe mới xuất hiện, xuất hiện trở lại hoặc tiếp diễn mà mọi người có thể gặp phải trong hơn bốn tuần sau khi họ bị
+          nhiễm vi-rút gây ra bệnh COVID-19 lần đầu. Những người nhiều tuổi hơn và những người mắc một số bệnh nền nhất định có khả năng mắc bệnh nặng cao hơn do COVID-19. Vắc-xin
+          ngừa COVID-19 là an toàn và có hiệu quả."
+
+  utter_why_call_corona:
+    - text: "Vào ngày 11 tháng 2 năm 2020, Tổ Chức Y Tế Thế Giới đã công bố tên chính thức cho căn bệnh gây ra đại dịch do vi-rút corona mới 2019 gây ra, được phát hiện lần đầu
+            tại Vũ Hán, Trung Quốc. Tên mới của bệnh này là bệnh vi-rút corona 2019, viết tắt là COVID-19. Trong chữ COVID-19, 'CO' viết tắt của từ 'corona,' 'VI' viết tắt của từ
+            'vi-rút,' và 'D' là bệnh. Trước đó, căn bệnh này được gọi là 'vi-rút corona mới 2019' hoặc 'nCoV-2019'."
+
+  utter_how_covid_spread:
+    - text: "COVID-19 được cho là lây lan chủ yếu thông qua tiếp xúc gần từ người sang người, bao gồm cả giữa những người ở gần nhau (trong phạm vi 6 feet). Những người bị nhiễm
+              bệnh nhưng không biểu hiện các triệu chứng có thể lây vi-rút sang người khác. Các ca tái nhiễm COVID-19 đã được báo cáo nhưng hiếm gặp. Chúng tôi vẫn đang tìm hiểu về
+              cách thức lây lan của vi-rút và mức độ nghiêm trọng của bệnh. COVID-19 lây truyền dễ dàng từ người sang người. Mức độ vi-rút lây lan từ người sang người dễ dàng
+              như thế nào có thể khác nhau. Vi-rút gây ra COVID-19 lây lan nhanh hơn cúm, nhưng lây lan chậm hơn bệnh sởi, một bệnh có vi-rút là loại vi-rút thuộc những loại
+              mang tính truyền nhiễm cao nhất được biết có ảnh hưởng đến con người."
+
+  utter_can_muoi_have_covid:
+    - text: "Tại thời điểm này, CDC không có dữ liệu nào cho thấy muỗi hoặc ve lây lan loại vi-rút corona mới này hoặc các loại vi-rút corona tương tự khác. Cách chính mà COVID-19
+          lây lan là từ người sang người. Xem Vi-rút corona lây lan như thế nào để biết thêm thông tin."
+
+  utter_protect_from_covid:
+    - text: "Tiêm vắc-xin COVID-19 càng sớm càng tốt. Tìm vắc-xin.Đeo khẩu trang che kín mũi và miệng của quý vịđể bảo vệ bản thân và những người khác.Giữ khoảng cách 6 feet với những
+    người không sống cùng quý vị.Tránh đám đông và những không gian trong nhà bị thông gió kém.Rửa tay thường xuyên bằng xà phòng và nước. Sử dụng dung dịch sát trùng tay nếu không có
+    xà phòng và nước."
+
+  utter_should_wear_mask:
+    - text: "Khẩu trang có hiệu quả nhất khi tất cả mọi người đều đeo khẩu trang. Khẩu trang KHÔNG thay thế cho biện pháp cách ly giao tiếp xã hội. Vẫn cần đeo khẩu trang bên
+    cạnh việc duy trì khoảng cách ít nhất 6 feet, đặc biệt là khi ở trong không gian trong nhà gần những người không sống trong cùng nhà với quý vị."
+
+  utter_what_mask_to_choose:
+    - text: "Có hai lớp vải trở lên, giặt được và thoáng khí. Che kín mũi và miệng. Ôm khít hai bên mặt và không có khe hở. Có gọng ở mũi để ngăn không cho không khí thoát ra ngoài ở phía trên khẩu trang"
+
+  utter_what_mask_not_choose:
+    - text: "Làm bằng loại vải gây khó thở, ví dụ như vinyl. Có van thở ra hoặc lỗ thông hơi để cho các phần tử vi-rút thoát ra ngoài. Được ưu tiên cho nhân viên y tế, bao gồm mặt nạ N95."
+
+  utter_how_wear_mask:
+    - text: "Rửa tay hoặc dùng dung dịch sát trùng tay trước khi đeo khẩu trang. Đeo khẩu trang qua mũi và miệng và cố định dưới cằm của quý vị. Đeo khẩu trang vừa khít vào hai bên mặt,
+    đeo vòng treo qua tai hoặc cột dây phía sau đầu. Nếu quý vị phải liên tục điều chỉnh khẩu trang, có nghĩa là khẩu trang không vừa khớp và quý vị có thể cần tìm một loại hoặc thương
+    hiệu khẩu trang khác. Đảm bảo rằng quý vị có thể thở dễ dàng"
+
+  utter_how_preserve_mask:
+    - text: "Cất giữ khẩu trang bị ướt hoặc bị bẩn trong túi nhựa. Bảo quản khẩu trang không bị ẩm hoặc bị bẩn trong túi giấy. Giặt khẩu trang của quý vị thường xuyên."
+
+  utter_type_of_mask:
+    - text: "Khẩu trang vải, khẩu trang dùng 1 lần, Khẩu trang đáp ứng tiêu chuẩn"
+
+  utter_get_covid_from_product:
+    - text: "Vi-rút corona được cho là lây lan thường xuyên nhất thông qua các giọt bắn từ đường hô hấp. Mặc dù vi-rút có thể tồn tại trong một thời gian ngắn trên một số bề mặt, nhưng
+    vi-rút không có khả năng lây lan từ thư, sản phẩm hoặc bao bì trong nước hoặc quốc tế. Tuy nhiên, mọi người có thể mắc bệnh COVID-19 do chạm vào bề mặt hoặc vật có vi-rút trên đó và
+    sau đó chạm vào miệng, mũi hoặc có thể là mắt của mình, nhưng đây không được cho là cách lây lan chính của vi-rút."
+
+  utter_ask_country:
+    - text: "Bạn muốn biết ở quốc gia nào?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

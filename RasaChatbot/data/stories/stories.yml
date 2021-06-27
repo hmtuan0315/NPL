@@ -1,0 +1,82 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_help
+
+- story: question is bot
+  steps:
+  - intent: question_is_bot
+  - action: utter_response_is_bot
+  - action: utter_help
+
+- story: what is corona
+  steps:
+  - intent: what_is_corona
+  - action: utter_what_is_corona
+
+- story: why call corona
+  steps:
+  - intent: why_call_corona
+  - action: utter_why_call_corona
+
+- story: how covid spread
+  steps:
+  - intent: how_covid_spread
+  - action: utter_how_covid_spread
+
+- story: can muoi have covid
+  steps:
+  - intent: can_muoi_have_covid
+  - action: utter_can_muoi_have_covid
+
+- story: protect from covid
+  steps:
+  - intent: protect_from_covid
+  - action: utter_protect_from_covid
+
+- story: should wear mask
+  steps:
+  - intent: should_wear_mask
+  - action: utter_should_wear_mask
+
+- story: what_mask_to_choose
+  steps:
+  - intent: what_mask_to_choose
+  - action: utter_what_mask_to_choose
+
+- story: what mask not choose
+  steps:
+  - intent: what_mask_not_choose
+  - action: utter_what_mask_not_choose
+
+- story: how wear mask
+  steps:
+  - intent: how_wear_mask
+  - action: utter_how_wear_mask
+
+- story: how preserve mask
+  steps:
+  - intent: how_preserve_mask
+  - action: utter_how_preserve_mask
+
+- story: type of mask
+  steps:
+  - intent: type_of_mask
+  - action: utter_type_of_mask
+
+- story: get covid from product
+  steps:
+  - intent: get_covid_from_product
+  - action: utter_get_covid_from_product
+
+- story: ques overall covid country
+  steps:
+    - intent: ques_overall_covid_country
+    - action: utter_ask_country
+    - intent: get_country
+    - action: overall_covid_country

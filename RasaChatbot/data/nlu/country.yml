@@ -1,0 +1,11 @@
+version: "2.0"
+
+nlu:
+- intent: get_country
+  examples: |
+    - Việt Nam
+    - Mỹ
+    - Mĩ
+    - Ấn Độ
+
+

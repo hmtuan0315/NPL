@@ -1,0 +1,120 @@
+version: "2.0"
+
+nlu:
+- intent: what_is_corona
+  examples: |
+    - covid19 là gì?
+    - corona là gì?
+    - corona virus là gì?
+    - what is corona virus?
+    - what is covid19?
+    - covid19 là bệnh gì?
+
+- intent: why_call_corona
+  examples: |
+    - tại sao gọi là covid19?
+    - tại sao gọi là corona?
+    - nguồn gốc của từ covid?
+
+- intent: how_covid_spread
+  examples : |
+    - covid lây lan như thế nào?
+    - cách covid lây lan?
+    - con đường lây lan của corona?
+    - con đường lây lan của covid?
+    - sự lây lan của covid19?
+
+- intent: can_muoi_have_covid
+  examples: |
+    - muỗi hay ve có truyền virut covid không?
+    - muỗi hay ve có lây corona không?
+    - muỗi có truyền bệnh covid hay không?
+
+
+- intent: protect_from_covid
+  examples: |
+    - Làm thế nào để bảo vệ bản thân khỏi covid19
+    - cách phòng bệnh covid19
+    - cách ngăn ngừa covid19?
+    - cách phòng bệnh corona?
+    - cách ngăn ngừa corona?
+    - cách phòng tránh covid19?
+
+- synonym: covid
+  examples: |
+    - covid
+    - corona
+    - corona virus
+
+- intent: should_wear_mask
+  examples: |
+    - có nên đeo khẩu trang để phòng tránh covid không?
+    - không đeo khẩu trang có được không?
+    - đeo khẩu trang có bắt buộc không?
+    - đeo khẩu trang có phòng tránh được covid không?
+    - có phải đeo khẩu trang không?
+    - có nên dùng khẩu trang không
+    - nên sử dụng khẩu trang không?
+    - có bắt buộc dùng khẩu trang không?
+
+- intent: what_mask_to_choose
+  examples: |
+    - tôi nên đeo loại khẩu trang nào?
+    - khẩu trang nào tốt?
+    - thế nào là khẩu trang tốt?
+    - cách chọn khẩu trang tốt?
+    - nên sử dụng khẩu trang nào?
+
+- intent: what_mask_not_choose?
+  examples: |
+    - không nên đeo loại khẩu trang nào?
+    - khẩu trang nào không tốt?
+    - khẩu trang nào kém chất lượng?
+    - thế nào là khẩu trang không tốt
+    - thế nào là khẩu trang kém chất lượng
+
+- intent: how_wear_mask?
+  examples: |
+    - cách đeo khẩu trang?
+    - đeo khẩu trang đúng cách?
+    - đeo khẩu trang như thế nào?
+    - cách dùng khẩu trang
+    - cách sử dụng khẩu trang
+    - khẩu trang sử dụng như thế nào?
+
+- intent: how_preserve_mask
+  examples: |
+    - cách bảo quản khẩu trang?
+    - nên bảo quan khẩu trang như thế nào?
+    - Làm thế nào để bảo quản khẩu trang?
+    - cách giữ khẩu trang luôn sạch?
+    - giặt khẩu trang như thế nào?
+    - cách giữ khẩu trang an toàn?
+    - cách giữ khẩu trang sạch sẽ?
+    - sử dụng lại khẩu trang
+
+- intent: type_of_mask
+  examples: |
+    - có bao nhiêu loại khẩu trang?
+    - các loại khẩu trang tốt
+    - các loại khẩu trang
+    - khẩu trang phổ biến
+    - các loại khẩu trang phổ biến
+    - các loại khẩu trang thịnh hành
+
+- intent: get_covid_from_product
+  examples: |
+    - tôi có thể mắc covid19 từ đồ vật, sản phẩm không?
+    - đồ vật có lây truyền covid không?
+    - covid có trên đồ vật không?
+    - bao bì, thư, sản phẩm có truyền covid không
+    - bao bì, thư, sản phẩm có lây corona không
+    - chạm vào đồ vật có dính corana không
+    - tiếp xúc vào đồ vật có nhiễm covid không
+
+- intent: ques_overall_covid_country
+  examples: |
+    - tình hình dịch bệnh trên thế giới
+    - tình hình covid hiện nay
+    - thông tin về covid hiện nay
+    - tình hình dịch bệnh
